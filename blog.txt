@@ -1,0 +1,95 @@
+1. mkdir frontend
+2. cd frontend
+
+3. npm create vite@latest
+4. Project name: ... .
+5. Select a framework: » React
+6. Select a variant: » JavaScript
+
+7. npm install
+8. npm i react-router-dom react-icons axios
+
+9. npm install -D tailwindcss postcss autoprefixer
+10. npx tailwindcss init -p
+
+11. clear tailwind.config.js and past -->
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+12. clear index.css and past -->
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+13. clear app.jsx
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
+
+1. mkdir backend
+2. cd backend
+
+3. npm init -y
+4. npm i bcrypt cookie-parser cors dotenv express jsonwebtoken mongoose multer nodemon path
+5. package.json -->
+
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon index.js",
+    "build": "npm i",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.2",
+    "path": "^0.12.7"
+  }
+}
+
+6. .env -->
+MONGO_URL=""
+PORT="5000"
+SECRET=""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
